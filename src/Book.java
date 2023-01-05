@@ -1,7 +1,7 @@
 public class Book {
-    public String title;
-    public int pages;
-    public int releaseYear;
+    private String title;
+    private int pages;
+    private int releaseYear;
 
     public Book(){
 
@@ -23,12 +23,33 @@ public class Book {
 
     @Override
     public String toString() {
-        return "Book{" +
+        return "Knyga{" +
                 "Pavadinimas yra '" + title + '\'' +
                 ", puslapių skaičius yra " + pages +
                 ", knygos išleidimo metai yra " + releaseYear +
                 '}';
     }
 
+    public String gettitle(){
+        return this.title;
+    }
+
+    public void settitle(String title){
+        this.title = title;
+
+    }
+
+    public int getPages(){
+        return this.pages;
+    }
+    public void setPages(int pages){
+        this.pages = pages;
+    }
+    public int getReleaseYear(){
+        return this.releaseYear;
+    }
+    public void setReleaseYear(int releaseYear){
+        this.releaseYear = releaseYear;
+    }
 
 }

@@ -6,11 +6,11 @@ public class Main {
         Book knyga = new Book();
         System.out.println(knyga);
 
-        knyga.title = "Kapitonas plaukia";
-        knyga.pages = 77;
-        knyga.releaseYear = 2005;
+        knyga.settitle("Kapitonas plaukia");
+        knyga.setPages(77);
+        knyga.setReleaseYear(2005);
 
-        System.out.println(knyga.title + " " + knyga.pages + " " + knyga.releaseYear);
+        System.out.println(knyga.gettitle() + " " + knyga.getPages() + " " + knyga.getReleaseYear());
 
         Book knyga2 = new Book ("Antra knyga", 250, 2007);
         Book knyga3 = new Book ("Trečia knyga", 112, 2021);
@@ -21,9 +21,15 @@ public class Main {
         biblioteka.add(knyga2);
         biblioteka.add(knyga3);
         biblioteka.add(knyga4);
+        for (int i = 0; i < biblioteka.size() ; i++) {
+            System.out.println(biblioteka.get(i));
 
-        System.out.println(knyga2);
+        }
 
+       // System.out.println(knyga2);
+
+//        Pagalbinė.intSq(5);
+//        knyga2.gettitle();
 
     }
 }
