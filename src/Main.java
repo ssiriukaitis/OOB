@@ -31,5 +31,20 @@ public class Main {
 //        Pagalbinė.intSq(5);
 //        knyga2.gettitle();
 
+        Plant augalas = new Plant();
+        System.out.println(augalas);
+
+        augalas.setName("Kapitonas plaukia");
+        knyga.setPages(77);
+        knyga.setReleaseYear(2005);
+
+        System.out.println(knyga.gettitle() + " " + knyga.getPages() + " " + knyga.getReleaseYear());
+
+        Book knyga2 = new Book
+
     }
+
+
+
+
 }
